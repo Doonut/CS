@@ -1,7 +1,7 @@
 /*******************
- * Name:Kyle Casey
- * Date:01/24/15
- * Desc:Simple program manipulating strings.
+ * Name: Kyle Casey
+ * Date: 01/24/15
+ * Desc: Simple program manipulating strings.
  */
 package lab1;
 

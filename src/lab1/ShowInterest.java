@@ -1,7 +1,7 @@
 /*******************
- * Name:Kyle Casey
- * Date:01/24/15
- * Desc:Simple program showing interest.
+ * Name: Kyle Casey
+ * Date: 01/24/15
+ * Desc: Simple program showing interest.
  */
 package lab1;
 
