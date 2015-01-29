@@ -5,7 +5,6 @@ public class ScannerTest {
 	{
 		int num1 = 0;
 		double num2 = 0;
-		@SuppressWarnings("unused")
 		String str = " ",str1 = " ";
 		
 		Scanner input = new Scanner(System.in);
