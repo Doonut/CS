@@ -1,3 +1,10 @@
+/***********************
+* Name: Kyle Casey
+* Date: 2/8/15
+* Program: DelimiterDemo.java
+* Desc: print a delimiter in place of whitespace.
+*/
+
 package lab3;
 import java.util.Scanner;
 public class DelimiterDemo { //Start of class
