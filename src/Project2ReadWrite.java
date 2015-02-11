@@ -24,7 +24,7 @@ public class Project2ReadWrite { //start of class
 		
 		for(int i=0; inFile.hasNextInt(); ++i) {  //create for loop that grabs all integers from in.txt 
 		scores[i] = inFile.nextInt(); //save integers to array
-		total = total + scores[i]; //add to total ever irritation
+		total = total + scores[i]; //add to total every irritation
 		}
 		
 		average = total / scores.length; //calculate average by dividing total by array length
@@ -40,7 +40,7 @@ public class Project2ReadWrite { //start of class
 				outFile.print(scores[i] + "%, "); //write out score with percent sign and formatting
 			}
 		}
-		outFile.print("The average of the test scores is: " + average + "%"); //write out averagge test score
+		outFile.print("The average of the test scores is: " + average + "%"); //write out average test score
 		
 		inFile.close(); //close inFile
 		outFile.close(); //close outFile
