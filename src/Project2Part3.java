@@ -1,7 +1,7 @@
 /***********************
 * Name: Kyle Casey
-* Date: 2/8/15
-* Program: Project2ReadWrite.java
+* Date: 2/14/15
+* Program: Project2Part3.java
 * Desc: Read a file and write back to another.
 */
 
@@ -9,12 +9,12 @@ import java.io.*; //import libraries
 import java.util.*;
 import javax.swing.*;
 
-public class Project2Part3And4 { //start of class
+public class Project2Part3 { //start of class
 	public static String inFileName = "in.txt", outFileName = "out.txt"; //specify file paths
 	public static int testScores = 5; //specify how many test scores
 	public static void main(String[] args) throws FileNotFoundException //start of main with throws
 	{
-		String message = "";
+		String message = ""; //create blank message string
 		int[] scores; //create int array
 		scores = new int[testScores]; //set int array size
 		int total = 0,average; //create int total and average
@@ -44,19 +44,17 @@ public class Project2Part3And4 { //start of class
 		}
 		outFile.print("The average of the test scores is: " + average + "%"); //write out average test score
 		outFile.close(); //close outFile
-		
-		message = message + "Name: " + firstName + lastName + "\n" + "Test Scores: ";
-		for (int i=0; scores.length > i; ++i)
+		inFile.close(); //close inFile
+		message = message + "Name: " + firstName + lastName + "\n" + "Test Scores: "; //add name to message
+		for (int i=0; scores.length > i; ++i) //create for loop to add scores to message
 		{
-			if (scores.length - 1 == i) {
-				message = message + scores[i] + "\n";
+			if (scores.length - 1 == i) { //if last score in array
+				message = message + scores[i] + "\n"; //print with next line
 			}
 			else {
-				message = message + scores[i] + " ";
+				message = message + scores[i] + " "; //print with space for next score
 			}	
 		}
-		JOptionPane.showMessageDialog(null, message, "Wages", JOptionPane.INFORMATION_MESSAGE);
-		
-		inFile.close(); //close inFile
+		JOptionPane.showMessageDialog(null, message, "Test Scores", JOptionPane.INFORMATION_MESSAGE); //create Information Message with data from message
 	}
 }
