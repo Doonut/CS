@@ -49,12 +49,13 @@ public class Project2Part3 { //start of class
 		for (int i=0; scores.length > i; ++i) //create for loop to add scores to message
 		{
 			if (scores.length - 1 == i) { //if last score in array
-				message = message + scores[i] + "\n"; //print with next line
+				message = message + scores[i] + "%\n"; //print with next line
 			}
 			else {
-				message = message + scores[i] + " "; //print with space for next score
+				message = message + scores[i] + "% "; //print with space for next score
 			}	
 		}
+		message = message + "Average: " + average + "%\n";
 		JOptionPane.showMessageDialog(null, message, "Test Scores", JOptionPane.INFORMATION_MESSAGE); //create Information Message with data from message
 	}
 }
