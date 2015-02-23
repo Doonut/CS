@@ -5,7 +5,6 @@ public class Project3Part1 {
 	String selectionInput;
 	char selection;
 	int num1, num2;
-	double answer;
 	System.out.println("     Calculator Program     ");
 	System.out.println("----------------------------");
 	System.out.println("          A: Add            ");
@@ -22,19 +21,19 @@ public class Project3Part1 {
 	selectionInput = selectionInput.toUpperCase();
 	selection = selectionInput.charAt(0);
 	if (selection == 'A'){
-		answer = num1 + num2;
+		int answer = num1 + num2;
 		System.out.println(num1 + " + " + num2 + " = " + answer);
 	}
 	else if (selection == 'B'){
-		answer = num1 - num2;
+		int answer = num1 - num2;
 		System.out.println(num1 + " - " + num2 + " = " + answer);
 	}
 	else if (selection == 'C'){
-		answer = num1 * num2;
+		double answer = num1 * num2;
 		System.out.println(num1 + " * " + num2 + " = " + answer);
 	}
 	else if(selection == 'D'){
-		answer = num1 / num2;
+		double answer = num1 / num2;
 		System.out.println(num1 + " / " + num2 + " = " + answer);
 	}
 }
