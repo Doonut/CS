@@ -28,6 +28,7 @@ public class ScannerDemo2 {
 		
 		System.out.println("Next enter a line of text:");
 		String line = scannerObject.nextLine(); //get whole line of text
+		scannerObject.close();
 		System.out.println("You entered: \"" + line + "\""); //print whole line of text
 	}
 }

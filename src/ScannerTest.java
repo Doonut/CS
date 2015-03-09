@@ -36,7 +36,7 @@ public class ScannerTest {
 		System.out.print( "Enter your name: " );//will print enter your name
 		str1 = input.next();//sets str to your name
 		str = input.nextLine();//Gets input from the scanner
-		
+		input.close();
 		System.out.println("The number is "+ num1 +"and the floating poimt is "+ num2 +" and your name is "+ str1 +" "+ str +".");//prints all user input
 	}//end
 }//end

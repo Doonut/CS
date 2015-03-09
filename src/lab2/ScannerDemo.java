@@ -9,7 +9,7 @@ public class ScannerDemo {
 		System.out.println("the number of peas in a pod.");
 		int numberOfPods = keyboard.nextInt(); //Get first entered integer
 		int peasPerPod = keyboard.nextInt(); //Get second entered integer
-		
+		keyboard.close();
 		int totalNumberOfPeas = numberOfPods*peasPerPod; //calculate total number of peas
 		
 		System.out.print(numberOfPods + " pods and "); //print number of pods

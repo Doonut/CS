@@ -11,6 +11,7 @@ public class SelfService //Class
 		System.out.println("Do not use a dollar sign.");
 		int count = keyboard.nextInt(); //get how many items into integer
 		double price = keyboard.nextDouble(); //get how much each item is into double
+		keyboard.close();
 		double total = count*price; //calculate total cost
 		System.out.printf("%d items at $%.2f each.%n", count, price); //print how many items at what price per item
 		System.out.printf("Total amount due $%.2f. %n", total); //print total amount

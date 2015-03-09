@@ -26,6 +26,8 @@ public class DelimiterDemo { //Start of class
 		System.out.println("Reenter the same line of text:");
 		word1 = keyboard2.next(); //Enter word 1 from next String
 		word2 = keyboard2.next(); //Enter word 2 from next String
+		keyboard1.close();
+		keyboard2.close();
 		System.out.println(word1); //Print word 1
 		System.out.println(word2); //Print word 2
 	} //end of main method
