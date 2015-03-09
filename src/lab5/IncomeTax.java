@@ -17,7 +17,7 @@ public class IncomeTax { //start class
 		System.out.println("Enter net income.\n" 
 						+ "Do not include a dollar sign or any commas."); //prompt user for input
 		netIncome = keyboard.nextDouble(); //get next double variable from user
-		keyboard.close();
+		
 		if (netIncome <= 15000){ //if user makes no more than 15000
 			tax = 0; //no tax
 		}
@@ -29,7 +29,7 @@ public class IncomeTax { //start class
 			 tenPercentTax = 0.10*(netIncome - 30000); //calculate 10% tax
 			 tax = (fivePercentTax + tenPercentTax); //add them together
 		}
-		
+		keyboard.close();
 		System.out.printf("Tax due = $%.2f", tax); //print out amount of tax due
 	}
 }

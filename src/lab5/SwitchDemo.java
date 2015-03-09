@@ -14,7 +14,6 @@ public class SwitchDemo { //start class
 		Scanner keyboard = new Scanner(System.in); //create scanner object
 		System.out.println("Enter number of ice cream flavors:"); //prompt user for input
 		int numberOfFlavors = keyboard.nextInt( ); //get integer from user
-		keyboard.close();
 		switch (numberOfFlavors) //create switch statement
 		{
 			case 32: //if == 32 then
@@ -34,5 +33,6 @@ public class SwitchDemo { //start class
 				System.out.println(numberOfFlavors + " flavors."); //output with variable
 				break;
 		} //end switch statement
+		keyboard.close();
 	} //end main function
 } //end class
