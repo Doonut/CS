@@ -1,33 +1,38 @@
+/* Name: Kyle Casey
+ * Date: 3/22/15
+ * Program: DateFourthTry.java
+ * Desc: create program to manipulate dates
+ */
 package lab8;
 
-public class DateFourthTry{
-	private String month;
-	private int day;
-	private int year; //a four digit number.
-	private int monthInt;
+public class DateFourthTry{ //start class
+	private String month; //create private string month
+	private int day; //create private int day
+	private int year; //create private int year
+	private int monthInt; //create private monthInt
 	
-	public String toString(){
-		return (month + " " + day + ", " + year);
-	}
+	public String toString(){ //start String function toString()
+		return (month + " " + day + ", " + year); //return string of month day and year
+	} //end toString()
 	
-	public void writeOutput(){
-		System.out.println(month + " " + day + ", " + year);
-	}
+	public void writeOutput(){ //start function writeOutput()
+		System.out.println(month + " " + day + ", " + year); //display month day and year
+	} //end writeOutput()
 	
-	public boolean equals(DateFourthTry otherDate){
+	public boolean equals(DateFourthTry otherDate){ //start boolean function equals()
 		return ( (month.equals(otherDate.month))
-				&& (day == otherDate.day) && (year == otherDate.year) );
-	}
+				&& (day == otherDate.day) && (year == otherDate.year) ); //return if other date equals this date
+	} //end equals()
 	
 	
 	
-	public boolean precedes(DateFourthTry otherDate){
+	public boolean precedes(DateFourthTry otherDate){ //start boolean function precedes()
 		return ( (year < otherDate.year) ||
 				(year == otherDate.year && getMonth() <
 				otherDate.getMonth()) ||
 				(year == otherDate.year && month.equals(otherDate.month)
-				&& day < otherDate.day) );
-	}
+				&& day < otherDate.day) ); //return if this date precedes another
+	} //end precedes()
 	
 	public String monthString(int monthNumber){ //start monthString function
 		switch (monthNumber){ //start switch statement
@@ -69,7 +74,7 @@ public class DateFourthTry{
 		year = newYear; //set private year int from function int
 	} //end setDate
 	
-	public int getMonth(){
-		return monthInt;
-	}
-}
+	public int getMonth(){ //start int function getMonth()
+		return monthInt; //return monthInt
+	} //end getMonth()
+} //end class
