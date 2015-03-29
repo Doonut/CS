@@ -1,16 +1,18 @@
+package week10project;
 import java.util.Scanner;
 
 
-public class Wk10Class {
+public class Wk10Func {
 	private static Scanner input;
 	private static int num1, num2;
 	private static String selectionInput;
 	private static char selection;
 	private static boolean go = true;
 	
-	public static void main(String[] args) { //start main function	
-		CalcLoop();	
+	public Wk10Func(){
+		CalcLoop();
 	}
+	
 	public static void CalcLoop(){
 		double answer = 0; //set answer variable
 		input = new Scanner(System.in); //create scanner object

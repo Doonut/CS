@@ -47,7 +47,7 @@ public class project4InputBox { //start class
 			e.printStackTrace() //print error report
 		;} //end catch
 		
-		JFormattedTextField textInput = new JFormattedTextField(mf); //create textInput with MaskFormatter
+		final JFormattedTextField textInput = new JFormattedTextField(mf); //create textInput with MaskFormatter
 		textInput.setBounds(5,110,30,31); //set rectangle where object is located
 		
 		JButton enterButton = new JButton("Enter"); //create enter button
