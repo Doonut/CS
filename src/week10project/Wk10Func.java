@@ -1,6 +1,11 @@
 package week10project;
-import java.util.Scanner;
+/* Name: Kyle Casey, Bora Oytun
+ * Date: 3/28/15
+ * Program: Wk10Func.java
+ * Desc: Create constructor from Wk10Class instead of mains
+ */
 
+import java.util.Scanner;
 
 public class Wk10Func {
 	private static Scanner input;

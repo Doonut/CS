@@ -1,5 +1,11 @@
 package lab10;
 
+/* Name: Kyle Casey
+ * Date: 3/28/15
+ * Program: ConstructorsDemo.java
+ * Desc: Create constructor and methods to grab values from private variables.
+ */
+
 public class ConstructorsDemo {
 	public static void main(String[] args) {
 		Date date1 = new Date("December", 16, 1770), 

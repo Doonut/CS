@@ -1,3 +1,8 @@
+/* Name: Kyle Casey
+ * Date: 3/28/15
+ * Program: Project4Run.java
+ * Desc: Create Project4 Objects and show output
+ */
 
 public class Project4Run {
 	public static void main(String[] args){

@@ -1,5 +1,12 @@
 package lab10;
 
+/* Name: Kyle Casey
+ * Date: 3/28/15
+ * Program: Date.java
+ * Desc: Create object Class for Date Manipulation.
+ */
+
+
 import java.util.Scanner; 
 public class Date {
 	private String month; 
