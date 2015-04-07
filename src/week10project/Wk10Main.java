@@ -6,6 +6,8 @@ package week10project;
  * Desc: Create Wk10Func object
  */
 
-public class Wk10Main {
-	Wk10Func calc = new Wk10Func();
-}
+public class Wk10Main { //start class
+	public static void main(String[] args) { //start main class
+	Wk10Func calc = new Wk10Func(); //create calc object
+	} //end main
+} //end class
